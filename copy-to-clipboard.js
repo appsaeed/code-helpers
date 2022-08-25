@@ -1,12 +1,4 @@
-@php
-$content = file_get_contents(public_path('/') . config('app.logo'));
-$path = public_path('/') . config('app.logo');
-@endphp
 
-<button class="btn">Copy Picture!</button>
-
-
-<script>
     async function copyPicture(url){
         try {
             const response = await fetch(url);
@@ -68,4 +60,3 @@ $path = public_path('/') . config('app.logo');
     // } catch (error) {
     //     console.log(error)
     // }
-</script>
